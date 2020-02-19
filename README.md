@@ -39,3 +39,4 @@ red 5: vlan 47, f0/2 - 7
 red 6: vlan 56, f0/2 - 8
 red 7: vlan 94, f0/2 - 7
 red 8: vlan 78, f0/2 - 8
+ 
