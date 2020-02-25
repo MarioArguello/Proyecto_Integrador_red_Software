@@ -8,6 +8,13 @@ Finalmente realizar una simulación de la red en packet tracer, representando ca
 
 #Manuaal de implementacion
 
+Red diseñada
+
+![red](https://user-images.githubusercontent.com/60244917/75213417-07ee0780-5758-11ea-85ac-ccde9826bd8f.PNG)
+
+
+
+
 Las redes se nombran como:
 
 La red 1 tiene 4 PC.
