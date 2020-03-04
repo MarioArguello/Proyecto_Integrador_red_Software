@@ -21,48 +21,82 @@ Justificación
 Se utilizó la urbanización “La Laguna” para el diseño de la red, en la cual consta de 9 redes a cada una se le asignó una vlan diferente y estas se conectan en una única conexión para salir a internet.
 Acontinuación se indica cuantos dispositivos tiene asignado cada red de la urbanización:
  	La red 1 tiene 4 PC.
+  
  	La red 2 tiene 6 PC.
+  
  	La red 3 tiene 4 PC.
+  
  	La red 4 tiene 4 PC.
+  
  	La red 5 tiene 4 PC.
+  
  	La red 6 tiene 5 PC.
+  
  	La red 7 tiene 4 PC.
+  
  	La red 8 tiene 4 PC.
+  
  	La red 9 tiene 5 PC.
 
 Además cada manzana tiene asignada una red y todos los switch están conectados con un switch de capa 3. La asignación de ip a cada red fue la siguiente:
 
  	red 1: 170.100.1.1/ 255.255.255.224
+  
  	red 2: 170.100.2.1/ 255.255.255.224
+  
  	red 3: 170.100.3.1/ 255.255.255.224
+  
  	red 4: 170.100.4.1/ 255.255.255.240
+  
  	red 5: 170.100.5.1/ 255.255.255.240
+  
  	red 6: 170.100.6.1/ 255.255.255.192
+  
  	red 7: 170.100.7.1/ 255.255.255.240
+  
  	red 8: 170.100.8.1/ 255.255.255.240
+  
  	red 9: 170.100.9.1/ 255.255.255.192
 
 Se agregó vlans diferentes para la seguridad de los usuarios e hicimos la red segura asignando vlans diferentes a los puertos ocupados y libres para que las personas exteriores no obtengan acceso a la red. La configuración de vlans para cada red fue la siguiente:
+
  	red 1: vlan 50, f0/3 - 6
+  
  	red 2: vlan 60, f0/2 - 7
+  
  	red 3: vlan 69, f0/2 - 5
+  
  	red 4: vlan 32, f0/2 - 5
+  
  	red 5: vlan 47, f0/2 - 5
+  
  	red 6: vlan 56, f0/2 - 6
+  
  	red 7: vlan 94, f0/2 - 5
+  
  	red 8: vlan 78, f0/2 – 5
+  
  	red 9: vlan 68, f0/2 – 5
+  
 Ninguna vlan 1 tiene configurada la dirección IP pero las demas vlans si se les asignó una IP la cual se detalla en la siguiente tabla:
 
 Switch	VLAN	IP
 Red 1	50	170.100.1.1/27
+
 Red 2	60	170.100.2.1/27
+
 Red 3	69	170.100.4.1/27
+
 Red 4	32	170.100.4.1/28
+
 Red 5	47	170.100.5.1/28
+
 Red 6	56	170.100.6.1/26
+
 Red 7	94	170.100.7.1/28
+
 Red 8	78	170.100.8.1/26
+
 Red 9	68	170.100.9.1/26
 
 Todos los puertos troncales fueron asignados al puerto 1 de cada red, además se configuró las vlans nativas para poder tener control de todas las redes.
